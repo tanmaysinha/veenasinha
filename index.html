@@ -8,17 +8,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Hind:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Open Graph / iMessage link preview -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.veenasinha.com/" />
+  <meta property="og:title"       content="Veena Sinha — Author" />
+  <meta property="og:description" content="Poet and novelist. Explore the works of Dr. Veena Sinha." />
+  <meta property="og:image"       content="https://www.veenasinha.com/assets/profile.jpg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="800" />
+
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Veena Sinha — Author" />
+  <meta name="twitter:description" content="Poet and novelist. Explore the works of Dr. Veena Sinha." />
+  <meta name="twitter:image"       content="https://www.veenasinha.com/assets/profile.jpg" />
 </head>
 <body>
 
   <!-- NAV -->
   <header class="site-header">
     <nav class="nav container">
-      <span class="nav-logo">Veena Sinha</span>
+      <a href="#" class="nav-logo"><img src="assets/logo.svg" alt="Veena Sinha" height="40" /></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#books">Books</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:hemantveena@gmail.com">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -204,31 +219,12 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
-    <div class="container contact-inner">
-      <h2 class="section-title centered">Get in Touch</h2>
-      <p class="contact-intro">For inquiries about readings, events, interviews, or publishing — reach out below.</p>
-      <div class="contact-details">
-        <div class="contact-item">
-          <span class="contact-label">Email</span>
-          <a href="mailto:hello@veenasinha.com" class="contact-value">hello@veenasinha.com</a>
-        </div>
-        <div class="contact-divider"></div>
-        <div class="contact-item">
-          <span class="contact-label">Publisher / Agent</span>
-          <span class="contact-value placeholder-note"><em>[To be added]</em></span>
-        </div>
-        <div class="contact-divider"></div>
-        <div class="contact-item">
-          <span class="contact-label">Social</span>
-          <span class="contact-value placeholder-note"><em>[To be added]</em></span>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
+      <img src="assets/logo.svg" alt="Veena Sinha" class="footer-logo" />
       <p>&copy; <span id="year"></span> Veena Sinha. All rights reserved.</p>
     </div>
   </footer>
