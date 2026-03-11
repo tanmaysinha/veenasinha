@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      .bg   { fill: #faf8f4; }
+      .ring { fill: none; stroke: #b08850; }
+      .mono { font-family: Georgia, serif; fill: #1c1a18; }
+      .rule { stroke: #b08850; }
+      .sub  { font-family: Georgia, serif; fill: #4a4540; }
+      .dot  { fill: #b08850; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" class="bg" />
+
+  <!-- Outer border frame -->
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#b08850" stroke-width="1" />
+  <rect x="44" y="44" width="1112" height="542" fill="none" stroke="#b08850" stroke-width="0.5" stroke-dasharray="5 4" />
+
+  <!-- Logo circle - outer -->
+  <circle cx="600" cy="285" r="176" fill="none" stroke="#b08850" stroke-width="1.5" />
+  <!-- Logo circle - inner dashed -->
+  <circle cx="600" cy="285" r="160" fill="none" stroke="#b08850" stroke-width="1" stroke-dasharray="6 4" />
+
+  <!-- Monogram VS -->
+  <text x="600" y="330" text-anchor="middle" class="mono" font-size="144" font-weight="300" letter-spacing="-4">VS</text>
+
+  <!-- Top ornament -->
+  <line x1="528" y1="174" x2="672" y2="174" class="rule" stroke-width="1.2" />
+  <line x1="544" y1="166" x2="656" y2="166" class="rule" stroke-width="0.6" stroke-opacity="0.5" />
+  <!-- Bottom ornament -->
+  <line x1="528" y1="396" x2="672" y2="396" class="rule" stroke-width="1.2" />
+  <line x1="544" y1="404" x2="656" y2="404" class="rule" stroke-width="0.6" stroke-opacity="0.5" />
+
+  <!-- Corner diamonds -->
+  <polygon points="600,158 606,166 600,174 594,166" class="dot" />
+  <polygon points="600,396 606,404 600,412 594,404" class="dot" />
+
+  <!-- Name below logo -->
+  <text x="600" y="510" text-anchor="middle" class="mono" font-size="36" font-weight="400" letter-spacing="6">VEENA SINHA</text>
+  <text x="600" y="548" text-anchor="middle" class="sub" font-size="18" letter-spacing="4">POET &amp; NOVELIST</text>
+</svg>
