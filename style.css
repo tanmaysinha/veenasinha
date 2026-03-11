@@ -13,8 +13,9 @@
   --sage:     #4a6b5c;
   --border:   #e0d9d0;
 
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans:  'Inter', system-ui, sans-serif;
+  --font-serif:  'Cormorant Garamond', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
+  --font-hindi:  'Hind', 'Noto Sans Devanagari', sans-serif;
 
   --max-w: 1160px;
   --section-pad: 96px;
@@ -125,6 +126,14 @@ body {
   font-weight: 300;
 }
 
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+}
+
 .btn {
   display: inline-block;
   margin-top: 12px;
@@ -170,6 +179,14 @@ body {
 /* ===== ABOUT ===== */
 .about { background: var(--paper); }
 
+.author-photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 320px 1fr;
@@ -196,6 +213,14 @@ body {
   width: 56px;
   height: 56px;
   opacity: 0.4;
+}
+
+.about-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin-bottom: 24px;
 }
 
 .about-bio {
@@ -258,7 +283,6 @@ body {
 }
 
 .poetry-spine { background: var(--rose); }
-.hindi-spine  { background: var(--sage); }
 
 .book-info {
   padding: 24px 24px 28px;
@@ -277,7 +301,9 @@ body {
 }
 
 .poetry-card .book-lang { color: var(--rose); }
-.hindi-card   .book-lang { color: var(--sage); }
+.hindi-card  .book-lang { font-family: var(--font-hindi); letter-spacing: 0; }
+
+.hindi-title { font-family: var(--font-hindi); font-weight: 600; letter-spacing: 0; }
 
 .book-title {
   font-family: var(--font-serif);

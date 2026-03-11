@@ -6,7 +6,7 @@
   <title>Veena Sinha — Author</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&family=Hind:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -26,10 +26,13 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
-      <p class="hero-eyebrow">Author &amp; Poet</p>
-      <h1 class="hero-name">Veena Sinha</h1>
-      <p class="hero-tagline">Stories in prose, verse in two tongues</p>
-      <a href="#books" class="btn">Explore Works</a>
+      <p class="hero-eyebrow">Poet &amp; Novelist</p>
+      <h1 class="hero-name">Dr. Veena Sinha</h1>
+      <p class="hero-tagline">Creativity with a healing touch</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn">About</a>
+        <a href="#books" class="btn">Explore Works</a>
+      </div>
     </div>
   </section>
 
@@ -37,24 +40,22 @@
   <section id="about" class="section about">
     <div class="container about-grid">
       <div class="about-photo-wrap">
-        <div class="photo-placeholder">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="photo-icon">
-            <circle cx="50" cy="38" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/>
-            <path d="M15 85 Q15 62 50 62 Q85 62 85 85" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <span>Author Photo</span>
-        </div>
+        <img src="assets/profile.jpg" alt="Dr. Veena Sinha" class="author-photo" />
       </div>
       <div class="about-text">
-        <h2 class="section-title">About the Author</h2>
+        <h2 class="section-title">Dr. Veena Sinha</h2>
+        <p class="about-tagline">Creativity with a healing touch</p>
         <p class="about-bio">
-          Veena Sinha is a celebrated author and poet whose voice spans the breadth of human experience — from the intimate corners of domestic life to the vast landscapes of memory and longing. Writing with equal fluency in English and Hindi, her work has earned acclaim across literary communities in India and beyond.
+          Dr. Veena Sinha is a celebrated poet and novelist, known for her profound literary contributions. Born in the village of Sukuma, Bastar, in present-day Chhattisgarh, she completed her MD in Obstetrics &amp; Gynaecology from Rewa Medical College. Her medical experiences, combined with societal and life events, have deeply shaped her writing.
         </p>
         <p class="about-bio">
-          With eighteen published titles spanning literary fiction, novels, and poetry collections, Veena brings a rare depth of feeling to every page. Her prose is known for its lyrical precision, and her poetry for the way it holds silence as meaningfully as words.
+          In her distinguished medical career, she worked to reduce maternal and neonatal mortality, prevent female feticide, and alleviate women's suffering in tribal and rural areas. During the COVID-19 pandemic, she served as State Surveillance Officer, contributing sensitively to pandemic control. She retired as Additional Director of Health and Family Welfare, Government of Madhya Pradesh.
         </p>
-        <p class="about-bio placeholder-note">
-          <em>[Full biography to be added]</em>
+        <p class="about-bio">
+          A powerful and sensitive poet and storyteller, Veena has explored the intricate terrain of relationships, women's discourse, science, social disparity, nature, and human emotion. Her works have been published in prestigious national magazines and broadcast on Doordarshan and All India Radio.
+        </p>
+        <p class="about-bio">
+          The recipient of numerous literary and social awards, she is a keynote speaker at literary festivals and conferences, and a dedicated mentor to young writers. She has recently been appointed President of the Vanmali Srujan Peeth, Bhopal unit, and serves as an Advisor for the American India Foundation with the School Education Department.
         </p>
       </div>
     </div>
@@ -64,7 +65,7 @@
   <section id="books" class="section books">
     <div class="container">
       <h2 class="section-title centered">Published Works</h2>
-      <p class="section-subtitle">18 titles across novels and poetry</p>
+      <p class="section-subtitle">12 titles across novels and poetry</p>
 
       <!-- NOVELS -->
       <div class="category-block">
@@ -75,13 +76,30 @@
         </h3>
         <div class="books-grid">
 
-          <div class="book-card">
+          <div class="book-card hindi-card">
             <div class="book-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Novel Title One</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">पथ प्रज्ञा</h4>
+              <p class="book-desc"></p>
+            </div>
+          </div>
+
+          <div class="book-card hindi-card">
+            <div class="book-spine"></div>
+            <div class="book-info">
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">सपनों से बाहर</h4>
+              <p class="book-desc"></p>
+            </div>
+          </div>
+
+          <div class="book-card hindi-card">
+            <div class="book-spine"></div>
+            <div class="book-info">
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">अग्नि गर्भ में जलती पंखुरियाँ</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
@@ -89,111 +107,65 @@
             <div class="book-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
-              <h4 class="book-title">Novel Title Two</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">उपन्यास शीर्षक तीन</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">उपन्यास शीर्षक चार</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Novel Title Five</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card">
-            <div class="book-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">उपन्यास शीर्षक छह</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this novel — its themes, setting, and what makes it stand out. To be filled in.</p>
+              <h4 class="book-title">Unless a Perfect Rhythm Sets In</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- POETRY — ENGLISH -->
+      <!-- POETRY -->
       <div class="category-block">
         <h3 class="category-heading">
           <span class="category-line"></span>
-          Poetry in English
+          Poetry
           <span class="category-line"></span>
         </h3>
         <div class="books-grid">
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card hindi-card">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection One</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">तुम्हें जाना है मैंने</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card hindi-card">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection Two</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">फिर भी जीना लड़की</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card hindi-card">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection Three</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">तो भी टूटता नहीं सबीबोरे</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card hindi-card">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection Four</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">सुबह की धूप</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card hindi-card">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection Five</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">हिंदी</span>
+              <h4 class="book-title hindi-title">मन एक सरोवर</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
@@ -201,81 +173,26 @@
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
-              <h4 class="book-title">Poetry Collection Six</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <h4 class="book-title">A Glow in the Mirror</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <!-- POETRY — HINDI -->
-      <div class="category-block">
-        <h3 class="category-heading">
-          <span class="category-line"></span>
-          Poetry in Hindi &nbsp;|&nbsp; हिंदी कविता
-          <span class="category-line"></span>
-        </h3>
-        <div class="books-grid">
-
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
+          <div class="book-card poetry-card">
+            <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह एक</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">English</span>
+              <h4 class="book-title">Glitch in the Space Time</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
+          <div class="book-card poetry-card">
+            <div class="book-spine poetry-spine"></div>
             <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह दो</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह तीन</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह चार</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह पाँच</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
-            </div>
-          </div>
-
-          <div class="book-card hindi-card">
-            <div class="book-spine hindi-spine"></div>
-            <div class="book-info">
-              <span class="book-lang">Hindi</span>
-              <h4 class="book-title">काव्य संग्रह छह</h4>
-              <p class="book-year">Year</p>
-              <p class="book-desc">A brief description of this collection — its central themes and emotional world. To be filled in.</p>
+              <span class="book-lang">English</span>
+              <h4 class="book-title">The Sky is Alive and Waiting</h4>
+              <p class="book-desc"></p>
             </div>
           </div>
 
