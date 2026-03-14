@@ -91,39 +91,36 @@
         </h3>
         <div class="books-grid">
 
-          <div class="book-card hindi-card">
+          <div class="book-card hindi-card" data-book="path-pragya">
             <div class="book-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">पथ प्रज्ञा</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card hindi-card">
+          <div class="book-card hindi-card" data-book="sapne-se-bahar">
             <div class="book-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">सपनों से बाहर</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card hindi-card">
+          <div class="book-card hindi-card" data-book="agnigarbh">
             <div class="book-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">अग्नि गर्भ में जलती पंखुरियाँ</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card">
+          <div class="book-card" data-book="unless-a-perfect-rhythm">
             <div class="book-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
               <h4 class="book-title">Unless a Perfect Rhythm Sets In</h4>
-              <p class="book-desc"></p>
+              <a class="book-buy-link" href="https://www.amazon.com/UNLESS-PERFECT-RHYTHM-Veena-Sinha-ebook/dp/B01AOYOR28" target="_blank" rel="noopener" onclick="event.stopPropagation()">Buy on Amazon</a>
             </div>
           </div>
 
@@ -139,75 +136,69 @@
         </h3>
         <div class="books-grid">
 
-          <div class="book-card poetry-card hindi-card">
+          <div class="book-card poetry-card hindi-card" data-book="tumhe-jaana">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">तुम्हें जाना है मैंने</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card hindi-card">
+          <div class="book-card poetry-card hindi-card" data-book="fir-bhi-jeena">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">फिर भी जीना लड़की</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card hindi-card">
+          <div class="book-card poetry-card hindi-card" data-book="sobibore">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">तो कभी टूटता नहीं सॉबीबोर</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card hindi-card">
+          <div class="book-card poetry-card hindi-card" data-book="subah-ki-dhoop">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">सुबह की धूप</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card hindi-card">
+          <div class="book-card poetry-card hindi-card" data-book="man-ek-sarovar">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">हिंदी</span>
               <h4 class="book-title hindi-title">मन एक सरोवर है</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card" data-book="glow-in-the-mirror">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
               <h4 class="book-title">A Glow in the Mirror</h4>
-              <p class="book-desc"></p>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card" data-book="glitch-space-time">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
               <h4 class="book-title">Glitch in the Space Time</h4>
-              <p class="book-desc"></p>
+              <a class="book-buy-link" href="https://www.amazon.com/GLITCH-SPACE-TIME-Veena-Sinha-ebook/dp/B0F7FMJTWT" target="_blank" rel="noopener" onclick="event.stopPropagation()">Buy on Amazon</a>
             </div>
           </div>
 
-          <div class="book-card poetry-card">
+          <div class="book-card poetry-card" data-book="sky-alive-waiting">
             <div class="book-spine poetry-spine"></div>
             <div class="book-info">
               <span class="book-lang">English</span>
               <h4 class="book-title">The Sky is Alive and Waiting</h4>
-              <p class="book-desc"></p>
+              <a class="book-buy-link" href="https://www.amazon.com/SKY-ALIVE-WAITING-Veena-Sinha/dp/B0GCDDF667" target="_blank" rel="noopener" onclick="event.stopPropagation()">Buy on Amazon</a>
             </div>
           </div>
 
@@ -228,6 +219,17 @@
       <p>&copy; <span id="year"></span> Veena Sinha. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="bookModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&#x2715;</button>
+      <p class="modal-lang" id="modalLang"></p>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -250,6 +252,205 @@
         }
       });
     }, { threshold: 0.1 });
+
+    // Book descriptions
+    const bookData = {
+      'path-pragya': {
+        title: 'पथ प्रज्ञा',
+        lang: 'हिंदी',
+        isPoetry: false,
+        publisher: 'Kitabghar Prakashan, New Delhi',
+        isbn: '978-81-7016-427-2',
+        paragraphs: [
+          'Through Madhavi in Path Pragya, the writer seizes on contemporary patterns of women\'s exploitation from a prehistoric tale. At the centre of the novel is the story of widespread exploitation of women in Vedic kings\' courts and ashrams. Here, the sages who appear devoted to exalted deeds act as controllers. Yayati—a dharmic, "renowned" king who honours donor-heroes and rishis—is the one who orders his daughter\'s body to be used so that Galav can offer guru-dakshina to his teacher Vishvamitra. The court apparatus stamps scriptural approval on the king\'s arbitrary command. Rishi Vishvamitra himself takes her body for a set period, extracting a distinguished son and a portion of guru-dakshina.',
+          'The novel\'s body depicts kings of Ayodhya, Kashi and Bhojanagar—from Haryashva, mired in indulgence, to Divodasa, devoted to one wife, and Ushinara, a true lover who follows scripturally sanctioned action. Surprisingly, paying a fee to use Madhavi\'s body for a fixed period is not against the law in any of these three kingdoms. The writer presents this enduring form of women\'s exploitation almost like an oath document for today\'s date. Such credibility in preserving truth is rare in contemporary writing—that\'s why the novel is called a notable work.',
+          'Another important facet is the meaningful, technical dialogue on gross and subtle levels of male-female relations, the individual-collective and person-state relationships, and abstruse subjects like astrology and philosophy.',
+          'At the novel\'s end, Madhavi\'s decision is a reaction to society\'s erasure of women, where Madhavi becomes not merely active but significant.',
+          'And finally, it is because of the writer\'s subtle, deep study and analysis of the Vedic period that the language takes on a wonderful journey.'
+        ]
+      },
+      'sapne-se-bahar': {
+        title: 'सपनों से बाहर',
+        lang: 'हिंदी',
+        isPoetry: false,
+        publisher: 'Medha Books, New Delhi',
+        isbn: '81-8166-027-7',
+        paragraphs: [
+          'Superstition, casteism, the sectarianisation of religion, male dominance, women\'s suffering and their direct-indirect resistance, dowry, the dilapidated primary health centres in remote rural areas, the network of medicine sellers, scams in development work, the reality of police and prisons, dirty politics—altogether, issues linked to operators of an anti-people system and other external pressure groups form a natural extension of the plot. This cruel reality doesn\'t just lie bare; a front of resistance and struggle against it also opens up. Undoubtedly, the protagonist Dr Jaydeep is the brave warrior of this fight, who passes through countless—sometimes unexpected—pressures, tensions and conflicts yet stands firm on his principles. Whether anyone else supports such a struggling hero or not, characters like Dr Rafiq and DFO Amit Ray at least keep his morale up.',
+          'Dr Veena Sinha\'s work prompts open debate on all the above—plus the shortage-filled lives of tribals in forests and hills, the Naxalite problem or movement that emerges from this, the absence of basic services in rural belts, and other significant, thought-worthy issues. The whole novel succeeds in taking the reader along with interest from beginning to end. The story starts from a medical college, winds through many turns, and finally hints at the sprouting of a change-seeking leadership rising against the anti-people status quo, emerging from a nomadic community like the Lamana (Banjara) who are among the most backward and marginalised. In other words: <em>even under stones, seeds are ready to split open</em>. That is the merit, thesis, and purpose of this work.',
+          'Where Dr Veena Sinha\'s award-winning, widely discussed first novel <em>Path Pragya</em> looked at women\'s tragedy from multiple angles through Madhavi, this new novel, through Dr Jaydeep, pulls back the purdah to expose the ugly faces of the whole system and its sponsors.'
+        ]
+      },
+      'sky-alive-waiting': {
+        title: 'The Sky is Alive and Waiting',
+        lang: 'English',
+        isPoetry: true,
+        publisher: 'Ashaparas for Peace and Harmony Foundation',
+        isbn: '978-81-988860-8-8',
+        paragraphs: [
+          'My connection with Dr Veena Sinha is an old one—old not merely in terms of years but in that deeper, existential sense of oldness which comes from recognizing a kindred soul at first sight. She was a physician by profession, yet in truth she has always belonged to that subtler world where sensitivity becomes vision. With her finely tuned senses, she has long listened to the smallest tremors of human experience and turned them into flight—into poetry and story.',
+          'From the very start, Dr Sinha has been drawn toward the immaterial, the invisible signs of being. Her expression finds equal grace in both Hindi and English. Her imagination belongs to the global current of poetry that lies beyond the illusion of language—where humanity stands bare, with the tears of history, the flowing sensitivity of life, and the local, unhealed wounds of existence. Her medical life did not distance her from human suffering; rather, it made her more aware, more compassionate. This sense of suffering recurs throughout her work—not as lament, but as quiet empathy.',
+          'In her English poems, one can sense a shift, a widening of perception. Her gaze unites human emotion with the textures of the natural world. She observes not to record, but to absorb. Her writing lives outside the camps and slogans of literary groups, closer instead to her readers and friends.',
+          'This new collection, <em>The Sky is Alive and Waiting</em>, seems to emerge from that very space where long-contained intensities begin to find voice. It feels as if something within her—ancient, luminous, restless—was waiting to be released into the expanse of language. The poems carry that urgency and hunger for expression which is not merely aesthetic but existential. Here, poetry is no longer form or craft; it is a practice, a form of meditation. The book feels written from that quiet threshold where the soul and the sky pause, listening to each other.',
+          'Within the context of modern Indian English poetry, <em>The Sky is Alive and Waiting</em> situates itself with a quiet but perceptible distinctness. The poems are minimal, image-driven, and meditative, echoing the tendencies of poets like Arundhathi Subramaniam or Keki Daruwalla, though with an inner poise that is uniquely her own. Her syntax often bends toward intuition rather than logic, allowing thought to unfold in fluid phrases—an approach that resonates with the new aesthetic of Indian English verse, where language itself becomes a terrain of discovery.',
+          'There are undercurrents of the Upanishadic vision—the sense of oneness, the search for origin, the reverence for nature—but expressed in a global idiom. The collection does not announce its "Indianness"; it breathes it. In this way, Dr Sinha\'s work stands within the evolving stream of Indian English poetry: reflective of its modernity, yet rooted in the ancient intuition that poetry and consciousness are one.',
+          'Dr Sinha\'s free verse is disciplined yet fluid. There is no ornament, no pretension—only the natural cadence of feeling. Lines like "The Sun was creeping down on the mountain slope" and "Green leaves were stealing fire from golden rays" transform the landscape into human pulse. The sun, the rivers, the stones, the winds, the stars—all become extensions of human thought and tenderness.',
+          'In several poems—<em>The Furnace is Still Hot</em>, <em>Secrets of Becoming Fluid</em>, <em>Like Tectonic Plates</em>—geology, cosmology, and consciousness meet as one. In <em>Faith is Like a Magic Wand</em> and <em>Time Travels Through Us</em>, the quest is inward, psychological, spiritual. Her poems remind us that the cosmos is not something we gaze at—it is something we inhabit.',
+          'What strikes most in this collection is its ability to hold vastness and intimacy together. Poems like <em>Mother Untangled My Hair</em> and <em>My Baby Rests in My Arms</em> are tender, deeply human, where a single gesture becomes a cosmos. In others, language itself opens into the infinite, where the self dissolves into the breath of the universe.',
+          '<em>The Sky is Alive and Waiting</em> is not merely a poetry collection; it is the diary of a soul—where time, memory, and silence create their own constellations. Dr Veena Sinha belongs to that rare group of Indian poets who have united science, spirituality, and beauty into a single current of awareness. There are no slogans here, no noise—only the quiet radiance of being. Her poetry heals by listening.',
+          '— Dr Anand Kumar Singh, former Professor, Institute for Excellence in Higher Education, Bhopal, MP'
+        ]
+      },
+      'glitch-space-time': {
+        title: 'Glitch in the Space Time',
+        lang: 'English',
+        isPoetry: true,
+        publisher: 'Ashaparas for Peace and Harmony Foundation',
+        isbn: '978-81-985169-8-5',
+        paragraphs: [
+          'Literature is often referred to as the mirror of society. Even if we accept this to indeed be the case, rarely do references and facts related to science and unsolved mysteries find a place in modern poetry. The description of human sensibilities, dimensions of love, grief and longing, beauty of nature and reality of life and death is mostly enveloped in phrases that depict these aspects as if happening to us.',
+          'Dr Veena Sinha is a brilliant writer who has enthralled her readers with her descriptions of the brutalities of war, the vagaries of the weather, the tenderness of love and the pain of heartache. Her latest collection is a huge step ahead wherein she proceeds to take her readers on a journey into the unknown—much like a tour of space and time where realities and imagination merge to present an explosion of senses akin to the origin of the universe. Her vast experience as a medical doctor, and her travels to places unknown to the ordinary tourist, put her in a class of her own as far as the choice of words and descriptions are concerned.',
+          'The origin of life remains a constant mystery. But the origin of human emotions is a bigger one. Many poems in this collection take us to tough questions about love, the meaning of relationships and the simile of our lives with the happenings in outer space. It may appear a little mind-boggling to some, but actually the mysteries of our lives are more mind-boggling than this. The mention of everyday articles around our houses as metaphors adds a strangely attractive aspect to these poems.',
+          'Readers familiar with Dr Veena Sinha\'s unique writing will perhaps remember that ordinariness is not what you expect in her creations. The comparisons described in her poems are amazing, and the meaning of those apparently-complex word-play suddenly hits you. It is a style which is difficult to find in most contemporary writers.',
+          'I am sure this collection will add a new chapter to the repertory of modern-day English poetry on the global level.',
+          '— Ratan Mani Lal, Lucknow-based editor and senior journalist'
+        ]
+      },
+      'man-ek-sarovar': {
+        title: 'मन एक सरोवर है',
+        lang: 'हिंदी',
+        isPoetry: true,
+        publisher: 'Aisect Publication, Bhopal',
+        isbn: '978-81-976894-4-4',
+        paragraphs: [
+          'The poetry collection <em>Man Ek Sarovar Hai</em> by Veena Sinha—senior novelist, thinker and major poet of our time—is a highly important work. Creators from outside literature, coming from various professions, have enriched literature with new scientific vocabulary, image-combinations, diverse choice of subjects, broad concerns, ways of testing time and place, and a process of knowing nature, society and human thought through scientific insight. This collection by Dr Veena Sinha, MD in gynaecology, is proof of that.',
+          'The canvas and dimensions of <em>Man Ek Sarovar Hai</em>\'s poems are so vast they don\'t quite fit the metaphor of a lake; these poems arise not from churning a lake or ocean but from churning the whole universe.',
+          'Their re-reading of the universe\'s birth, interrelations of matter and life-worlds—offering not a spiritual exegesis of its mysterious light but a scientific-human perspective—makes them necessary and important.',
+          'These poems, investigating the interrelations of life and world, take all contemporary questions and discourses as their subject and make meaningful interventions; wherever in the world nature is exploited, whatever ecological issues arise, whatever inhuman discrimination occurs against women and humanity, whatever unequal distribution exists, these poems will be found standing fully against them. The poet has travelled many countries and written poems on their cities too.',
+          'In these poems one can see the development of Veena\'s poetry: early pieces, being deeper, have less horizontal spread, but as we go forward we meet poignant poems that know life\'s motions and setbacks, where beautiful, simple, rich language, creative beauty and composite making render them fuller, more communicative, human and touching. Veena\'s poems stand before us as a beautiful, important and necessary collection that needs to be read. They look at God, nature, literature, culture and the creative world of arts in their times from a human viewpoint.',
+          'Examining from a scientific angle the mysterious philosophical questions of duality-nonduality and the causes of contradictions, these works are needed for human dignity and empowerment. Through these works we will become familiar with Dr Veena\'s human sensitivities, her known and unknown dreams and tastes, and the viewpoint she has acquired to test reality. Veena\'s poetry, while analysing supreme power, nature\'s principles and their causes, is also a search for life\'s meaning.'
+        ]
+      },
+      'agnigarbh': {
+        title: 'अग्नि गर्भ में जलती पंखुरियाँ',
+        lang: 'हिंदी',
+        isPoetry: false,
+        publisher: 'Prakashan Sansthan, New Delhi',
+        isbn: '978-81-969704-1-3',
+        paragraphs: [
+          'This novel takes Veena Sinha\'s creative act to new heights. She uses antiquity in language with fine skill. The subtleties of clause linkage move the novel ahead naturally. Nalanda, hub of ten thousand students and teachers, was a unique centre of knowledge—books there were fathomless. The hero Madhav, carried by circumstance, passes Kākma, Bhilsa, Chhatarpur, Khajuraho, Kashi and reaches Nalanda, where Turk soldiers had defiled the sacred circles. The acharyas\' mantras did not work. Veena Sinha, in extensive description, balances the life-death questions of studying students trying to escape invaders. She shows mantras aren\'t enough for protection. Nalanda\'s end seems near; miracles look like fable. Sanghas and organisations were overtly religious but covertly political. Buddha, attacking caste supremacy, made monks worthy of respect.',
+          'The novel explains the notions of permanence and impermanence on the basis of facts, leaving us astonished. Attachment to the impermanent is the source of suffering in this world—Buddha\'s statement gives us new threads to search for in life.',
+          'Madhav\'s travelogue is a story of rise and fall. The novel is a unique effort to keep the will to live alive amid human struggle.'
+        ]
+      },
+      'glow-in-the-mirror': {
+        title: 'A Glow in the Mirror',
+        lang: 'English',
+        isPoetry: true,
+        isbn: '978-93-5235-841-0',
+        paragraphs: [
+          'The poetess, being a true child of nature, spent the maximum time of her childhood and adolescence in the lap of hills. She witnessed a dialogue with hills, rivers, breeze, stones and trees, and spent considerable time perceiving the environment. Thus, many of her poems seem to be addressing nature directly.',
+          'She is highly influenced by the way of life, various phases and stages of life, the flavour of age, family values, human virtues and temperaments.',
+          '— Vineet Khare'
+        ]
+      },
+      'unless-a-perfect-rhythm': {
+        title: 'Unless a Perfect Rhythm Sets In',
+        lang: 'English',
+        isPoetry: false,
+        publisher: 'Indra Publishing House, Bhopal',
+        isbn: '978-93-84535-32-2',
+        paragraphs: [
+          'A slice of life from the heartland of India, with all its feudal glory and faults, can at once be captivating and revolting. But then this is what life is all about. In a sprawling family with its grand customs, illusions and notions, there grows a soul that is sensitive and simple—one that looks at life as a beautiful experience quite unlike the tradition-bound existence that the feudal patriarch expects it to be. But it is not easy for a delicate flower to bloom in the dry, often blood-stained ravines where family love has little meaning before a loyalty to traditions, and rage can be kept subdued for generations but stands ready to erupt for settling age-old scores.',
+          'The story of Chandra Kirti, the delicate daughter born in a feudal lord\'s family, and her tribulations at being straight and normal, is a heart-warming and heart-wrenching tale. From the politics of gun to the scourge of terrorism, from breaking of taboos to the unfounded scare of HIV infection, Chandra sees them all—always wondering, worrying and loving. The people in her life are no less struck by the turn of events.',
+          'The epicentre of the story is the arid ravines of Madhya Pradesh, but the twists are as much universal as the travails of women anywhere else in the world. Coming from the pen of an award-winning writer who is also an accomplished surgeon, it is a haunting story that reveals the layers of love, affection, duplicity, false sense of pride, and the enduring spirit of hope that keeps life alive.'
+        ]
+      },
+      'sobibore': {
+        title: 'तो कभी टूटता नहीं सॉबीबोर',
+        lang: 'हिंदी',
+        isPoetry: true,
+        publisher: 'Pahle Pahal Prakashan, Bhopal',
+        isbn: '978-93-92212-62-8',
+        paragraphs: [
+          'Passing through Veena Sinha\'s poems is an extraordinary experience. In these poems you can feel their shifts in language. Poems of deep feeling are equipped with a scientific eye. Whether abroad or at home, Veena uses her insight to forge piercing works brimming with humanity and sensitivity. Poems that rescue the voice of life from history\'s pages lost in piles of skulls and skeletons explore the relationships among human, nature and God. Women bear war\'s worst consequences and childhood gets scorched. Whether Afghanistan or Rwanda, Chad or Chernobyl, Veena is present with her original sensibility. Like a committed creator, she expresses the pain born of continuous disabilities and struggle. In the poems, historicity unfolds carrying a realist viewpoint with it; struggling characters spark a strange kind of courage against oppression. Poems that collide with time forge their own identity.'
+        ]
+      },
+      'fir-bhi-jeena': {
+        title: 'फिर भी जीना लड़की',
+        lang: 'हिंदी',
+        isPoetry: true,
+        publisher: 'Rachna Samay, Bhopal',
+        isbn: '978-81-928977-6-9',
+        paragraphs: [
+          'Reading Veena Sinha\'s poems, it feels like Veena presents today\'s woman\'s pain, her suffering, deprivation, love and tenderness with such deep dialectical force that through the present, woman\'s historical form emerges—her agony across ages in a society that has long persisted.',
+          'From the way female foetuses are treated before birth or girls after, Veena Sinha expresses with profound sadness, a doctor\'s human concern, the helpless common person\'s powerlessness under cruel pressures. The poems are direct and simple—that is their craft, where any extra artifice completely disappears. At a time when women\'s writing is often offered as a flat, singular life, Veena Sinha\'s poems stand as evidence of work written from a woman\'s gaze, without insistence on any lofty ideology or the terror of any heavy doctrine. What there is, simply, is straight, honest life from which thinking begins.',
+          '— Hari Bhatnagar'
+        ]
+      },
+      'subah-ki-dhoop': {
+        title: 'सुबह की धूप',
+        lang: 'हिंदी',
+        isPoetry: true,
+        publisher: 'Shilpayan Prakashan, New Delhi / Rachna Samay, Bhopal',
+        isbn: '978-81-928977-8-3',
+        paragraphs: [
+          'This is the second collection of Veena Sinha\'s poems, and all of them are love poems. Between her attachment and desire a particular balance arises, rooted in an un-experienced assurance that frees them from unwanted sentimentality.',
+          'Reading these poems, one is reminded—if only covertly—of Mira, Mahadevi, even Dharamvir Bharati\'s <em>Kanupriya</em>. Yet these poems, in the matter of love, have nothing to do with doubt, uncertainty, fear, despair, suspicion or ego; they are poems steeped in whole love and its deep, if not primal, natural fullness. They brim with "transcendent endless joy born from the wish-tree of the body." All this is possible because love is a "considered consciousness running birth after birth," which reaches "the obscure secret of great bliss." In its self-expansion love is so unique, "one-self" and "kaustubh-gem-like" that "if anyone touches it, the day grows brighter, and the mind stays bound by infinite rays." One could say this unique, endless, ceaseless bond of inner-outer, in its own immanent activity, becomes self-bound—that "the whole motion of the universe contracts and trembles, dancing on quivering lips." Altogether, this transcendent immersion of love colours even its surroundings with the hue of deep desire\'s sunlight, and not only that—through it "the juice within the earth surges."',
+          'These poems, for their own natural rhythm, are like a long, sustained alaap of love, whose resulting absorption embraces its milieu too, and the mind tinted by this raga becomes engrossed.'
+        ]
+      },
+      'tumhe-jaana': {
+        title: 'तुम्हें जाना है मैंने',
+        lang: 'हिंदी',
+        isPoetry: true,
+        publisher: 'Vani Prakashan, New Delhi',
+        isbn: '81-7055-441-1',
+        paragraphs: [
+          'Veena Sinha has an inner connection to both the village enduring social inequalities, exploitation and poverty, and the city carrying all the distortions of modernity—equally and simultaneously. Her field of work involves her equally in the sufferings of people from both rural and urban worlds. That\'s why her poetry holds village life, nature, society, and also the threefold afflictions—physical, divine, and material. Her poems take the reader into an entirely new world of experience.',
+          'This is Veena Sinha\'s first poetry collection, and it matters because these poems have the simplicity and rhythm of folk songs, alongside the poet\'s own distinct delicacy and refinement. She doesn\'t shy away from the body; the Khajuraho series of poems constructs a different sociology of the body. The central subject of her poetry is woman and her sorrows. The poems carry both romance and deep sensuality. Because of their subtle realism-detachment, they open wide doors of feeling. Love, memories, separation, dreams, motherhood, and the irony of women\'s lives together give these poems a truly contemporary emotional texture.'
+        ]
+      }
+    };
+
+    // Modal logic
+    const overlay  = document.getElementById('bookModal');
+    const modalClose = document.getElementById('modalClose');
+
+    function openModal(key) {
+      const book = bookData[key];
+      if (!book) return;
+      document.getElementById('modalLang').textContent = book.lang;
+      document.getElementById('modalLang').className = 'modal-lang' + (book.isPoetry ? ' modal-lang--poetry' : '');
+      document.getElementById('modalTitle').textContent = book.title;
+      document.getElementById('modalTitle').className = 'modal-title hindi-title';
+      const metaParts = [];
+      if (book.publisher) metaParts.push(`<span class="modal-meta-publisher">${book.publisher}</span>`);
+      if (book.isbn)      metaParts.push(`<span class="modal-meta-isbn">ISBN ${book.isbn}</span>`);
+      document.getElementById('modalMeta').innerHTML = metaParts.join('');
+      document.getElementById('modalBody').innerHTML = book.paragraphs.map(p => `<p>${p}</p>`).join('');
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('[data-book]').forEach(card => {
+      card.addEventListener('click', function() {
+        openModal(this.dataset.book);
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
 
     document.querySelectorAll('.book-card, .about-grid, .contact-inner').forEach(el => {
       el.classList.add('fade-in');

@@ -276,6 +276,30 @@ body {
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
+[data-book] {
+  cursor: pointer;
+  position: relative;
+}
+
+[data-book]::before {
+  content: 'i';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background: var(--gold);
+  color: var(--cream);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+  line-height: 22px;
+  z-index: 1;
+}
+
+.poetry-card[data-book]::before { background: var(--rose); }
+
 .book-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(28, 26, 24, 0.1);
@@ -324,6 +348,22 @@ body {
   margin-bottom: 14px;
   letter-spacing: 0.04em;
 }
+
+
+.book-buy-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--rose);
+  transition: color 0.2s;
+}
+
+.book-buy-link:hover { color: var(--ink); }
+.book-card:not(.poetry-card) .book-buy-link { color: var(--gold); }
 
 .book-desc {
   font-size: 0.88rem;
@@ -428,6 +468,110 @@ a.contact-value:hover { color: var(--gold-lt); }
 .books-grid .book-card:nth-child(4) { transition-delay: 0.21s; }
 .books-grid .book-card:nth-child(5) { transition-delay: 0.28s; }
 .books-grid .book-card:nth-child(6) { transition-delay: 0.35s; }
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 26, 24, 0.72);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal {
+  background: var(--paper);
+  max-width: 700px;
+  width: 100%;
+  max-height: 82vh;
+  overflow-y: auto;
+  padding: 52px 56px;
+  position: relative;
+  transform: translateY(16px);
+  transition: transform 0.25s;
+}
+
+.modal-overlay.open .modal { transform: none; }
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.modal-close:hover { color: var(--ink); }
+
+.modal-lang {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  font-family: var(--font-hindi);
+}
+
+.modal-lang--poetry { color: var(--rose); }
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  color: var(--ink);
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 28px;
+}
+
+.modal-meta-publisher {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+.modal-meta-isbn {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}
+
+.modal-body p {
+  font-size: 1rem;
+  color: var(--ink-mid);
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+
+.modal-body p:last-child { margin-bottom: 0; }
+
+@media (max-width: 600px) {
+  .modal { padding: 36px 28px; }
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
